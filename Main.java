@@ -7,8 +7,8 @@
  *
  * @author Esteban Zambrano 22119
  * @author Juan Pablo Solis
- * @author Edwin Andres Kou
- * @since 26/1/2023
+ * @author Edwin Andres Kou 22305
+ * @since 26/01/2023
  */
 
 public class Main {
