@@ -9,7 +9,7 @@ public class View {
     }
     public String menu(){
         System.out.println("PostFix CALCULATOR");
-        System.out.println("1) Subir/Bajar Volumen");
+        System.out.println("1) Suma");
         System.out.println("2) Modo Radio");
         System.out.println("3) Modo Reproduccion");
         System.out.println("4) Modo telefono");
