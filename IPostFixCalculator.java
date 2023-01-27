@@ -1,5 +1,4 @@
 import java.util.Stack;
-
 public interface IPostFixCalculator {
 
     boolean isOneItem(IStack operandos);
