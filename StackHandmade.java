@@ -1,7 +1,4 @@
-/**
- *
- */
-package edu.uvg.structures;
+import java.util.Stack;
 
 /**
  * @author moises.alonso

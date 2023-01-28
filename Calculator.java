@@ -3,8 +3,13 @@ import java.util.ArrayList;
 public class Calculator implements IPostFixCalculator{
     private ArrayList<Integer> Operaciones= new ArrayList<Integer>();
 
+    /**
+     * @param operandos
+     * @param <T>
+     * @return
+     */
     @Override
-    public boolean isOneItem(IStack operandos) {
+    public <T> boolean isOneItem(IStack<T> operandos) {
         return false;
     }
 

@@ -1,7 +1,7 @@
 import java.util.Stack;
 public interface IPostFixCalculator{
 
-    boolean isOneItem(IStack operandos);
+    <T> boolean isOneItem(IStack<T>  operandos);
 
     int suma(int a, int b);
 
