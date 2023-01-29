@@ -14,7 +14,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Ola Kou");
-        System.out.println("Que dice Esteban");
+      Reader leer = new Reader();
+      leer.read();
     }
 }

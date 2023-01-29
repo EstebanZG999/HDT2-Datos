@@ -10,27 +10,38 @@ public class Calculator implements IPostFixCalculator{
      */
     @Override
     public <T> boolean isOneItem(IStack<T> operandos) {
+
+
         return false;
     }
 
     @Override
     public int suma(int a, int b) {
-        return 0;
+
+        int resultado;
+        resultado = a+b;
+        return resultado;
     }
 
     @Override
     public int resta(int a, int b) {
-        return 0;
+        int resultado;
+        resultado= a-b;
+        return resultado;
     }
 
     @Override
     public int multiplicacion(int a, int b) {
-        return 0;
+        int resultado;
+        resultado = a*b;
+        return resultado;
     }
 
     @Override
     public int division(int a, int b) {
-        return 0;
+        int resultado;
+        resultado = a/b;
+        return resultado;
     }
 
     @Override
@@ -40,6 +51,8 @@ public class Calculator implements IPostFixCalculator{
 
     @Override
     public ArrayList<String> getItems(String _expresion) {
+
+
         return null;
     }
 }
