@@ -6,7 +6,7 @@
  * Main: Clase Principal Laboratorio 2
  *
  * @author Esteban Zambrano 22119
- * @author Juan Pablo Solis
+ * @author Juan Pablo Solis 22102
  * @author Edwin Andres Kou 22305
  * @since 26/01/2023
  */
