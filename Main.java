@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * Universidad del Valle de guatemala
  * Programación Orientada a Objetos
@@ -14,18 +16,11 @@
 public class Main {
 
     public static void main(String[] args) {
-        Calculator calc = new Calculator();
-        calc.calculadora();
+        Controlador control = new Controlador();
+        control.Calculadora();
+        
         //C:\Users\Usuario\Desktop\test.txt
 
-
-
-
-
-
-
-
-
-
     }
+
 }

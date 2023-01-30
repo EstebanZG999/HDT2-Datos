@@ -7,39 +7,6 @@ public class Calculator implements IPostFixCalculator{
     String Datos = "";
     String[] spliting;
 
-    public void calculadora(){
-        Reader red = new Reader();
-        Datos = red.read();
-        spliting = Datos.split(" ");
-
-        for(int i = spliting.length-1; i >= 0 ;i--){
-                Mystack.push(spliting[i]);
-        }
-        //Mystack.push(spliting[0]);
-
-        try {
-            for(int i = 0; i<= Mystack.count;i++){
-                Operaciones.add(Integer.valueOf(Mystack.pull()));
-            }
-        }
-        catch (Exception e){
-        }
-
-        int a = Operaciones.get(Operaciones.size()-1);
-        int b = Operaciones.get(Operaciones.size()-2);
-        Operaciones.remove(Operaciones.size()-1);
-        Operaciones.remove(Operaciones.size()-1);
-        Mates(a,b);
-
-
-        for(int i = Operaciones.size()-1; i >= 0; i--){
-            Mates(Resultados,Operaciones.get(i));
-        }
-        System.out.println("El resultado es: " + Resultados);
-    }
-
-
-
     /**
      * @param operandos
      * @param <T>
@@ -47,10 +14,9 @@ public class Calculator implements IPostFixCalculator{
      */
     @Override
     public <T> boolean isOneItem(IStack<T> operandos) {
-
-
-
-
+        if (operandos.count()==1) {
+            return  true;
+        }
         return false;
     }
 
@@ -84,39 +50,20 @@ public class Calculator implements IPostFixCalculator{
 
     @Override
     public boolean isOperator(String item) {
-
-
-
-
+        if (item.equals("*")||item.equals("+")||item.equals("-")||item.equals("/")){
+            return true;
+        }
         return false;
     }
 
     @Override
     public ArrayList<String> getItems(String _expresion) {
-
-
-
-
-        return null;
-    }
-
-    public void Mates(int a, int b){
-        String Variable = Mystack.pull();
-        if(Variable.equals("+")){
-            Resultados = suma(a,b);
-
+        ArrayList<String> Items = new ArrayList<String>();
+        String[] ItemsSplit = _expresion.split(" ");
+        for (int i = 0;i<ItemsSplit.length;i++){
+            Items.add(ItemsSplit[i]);
         }
-        if(Variable.equals("-")){
-            Resultados = resta(a,b);
-
-        }
-        if(Variable.equals("*")){
-            Resultados = multiplicacion(a,b);
-
-        }
-        if(Variable.equals("/")){
-            Resultados = division(a,b);
-        }
+        return Items;
     }
 
 }
