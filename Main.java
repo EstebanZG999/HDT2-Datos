@@ -14,7 +14,18 @@
 public class Main {
 
     public static void main(String[] args) {
-      Reader leer = new Reader();
-      leer.read();
+        Calculator calc = new Calculator();
+        calc.calculadora();
+        //C:\Users\Usuario\Desktop\test.txt
+
+
+
+
+
+
+
+
+
+
     }
 }
