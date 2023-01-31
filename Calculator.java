@@ -9,12 +9,12 @@ public class Calculator implements IPostFixCalculator{
     String[] spliting;
 
     /**
-     * @param operandos
-     * @param <T>
+     * @param
+     * @param
      * @return
      */
     @Override
-    public <T> boolean isOneItem(IStack<T> operandos) {
+    public  boolean isOneItem(IStack operandos) {
         if (operandos.count()==1) {
             return  true;
         }
