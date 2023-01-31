@@ -14,14 +14,14 @@
 public class Main {
 
     public static void main(String[] args) {
-<<<<<<< HEAD
+
         Controlador control = new Controlador();
         control.Calculadora();
         //C:\Users\Usuario\Desktop\test.txt
 
-=======
+
       Reader leer = new Reader();
       leer.read();
->>>>>>> 5f495fff1951ce7ea68afc3d114d0fc725922097
+
     }
 }
