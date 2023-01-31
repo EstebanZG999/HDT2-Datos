@@ -16,7 +16,6 @@ public class Reader {
             Scanner myReader = new Scanner(myObj);
             while (myReader.hasNextLine()) {
                 data = myReader.nextLine();
-                System.out.println(data);
                 return data;
             }
             myReader.close();

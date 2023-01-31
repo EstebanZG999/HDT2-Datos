@@ -59,9 +59,9 @@ public class Calculator implements IPostFixCalculator{
     @Override
     public ArrayList<String> getItems(String _expresion) {
         ArrayList<String> Items = new ArrayList<String>();
-        String[] ItemsSplit = _expresion.split(" ");
-        for (int i = 0;i<ItemsSplit.length;i++){
-            Items.add(ItemsSplit[i]);
+        String[] ItemsDivididos = _expresion.split(" ");
+        for (int i = 0;i<ItemsDivididos.length;i++){
+            Items.add(ItemsDivididos[i]);
         }
         return Items;
     }
