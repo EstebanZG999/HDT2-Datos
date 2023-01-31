@@ -1,9 +1,8 @@
 /**
  * Universidad del Valle de guatemala
- * Programación Orientada a Objetos
+ * Estructuras de Datos
  *
- * Laboratorio 3 Herencia
- * Main: Clase Principal Laboratorio 2
+ * Hoja de trabajo 2 Stack
  *
  * @author Esteban Zambrano 22119
  * @author Juan Pablo Solis
