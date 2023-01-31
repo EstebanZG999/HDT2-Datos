@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
 public class Calculator implements IPostFixCalculator{
+
     private ArrayList<Integer> Operaciones= new ArrayList<Integer>();
     StackHandmade<String> Mystack = new StackHandmade<String>();
     int Resultados = 0;
