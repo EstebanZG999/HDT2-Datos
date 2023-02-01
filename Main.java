@@ -18,9 +18,5 @@ public class Main {
         control.Calculadora();
         //C:\Users\Usuario\Desktop\test.txt
 
-
-      Reader leer = new Reader();
-      leer.read();
-
     }
 }
